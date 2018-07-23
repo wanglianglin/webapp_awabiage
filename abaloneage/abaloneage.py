@@ -6,7 +6,7 @@ from bottle import route, run, template, request, HTTPError
 from abalone_predictor import AbalonePredictor
 from collections import namedtuple
 
-#_predictor = AbalonePredictor()
+_predictor = AbalonePredictor()
 def calc_age(sex, length, diameter, height, weight):
     age = _predictor.predict(
         int(sex),
@@ -38,8 +38,7 @@ def result():
         #diameter    = int(request.params['diameter'])
         #height      = int(request.params['height'])
         #weight      = int(request.params['weight'])
-        #age = calc_age(**request.params)
-        age = 0 #--- For debug only ---
+        age = calc_age(**request.params)
         abalone = Abalone(age=age, **request.params)
 
     except (TypeError, ValueError) as e:
