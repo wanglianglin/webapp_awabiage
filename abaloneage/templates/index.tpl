@@ -2,7 +2,7 @@
 <div>
   <h3>How about the abalone has been catched ?</h3>
 </div>
-<form action="/awabiage" method="post">
+<form action="/abaloneage" method="post">
   <fieldset>
     <legend align="left">Enter information</legend>
 
