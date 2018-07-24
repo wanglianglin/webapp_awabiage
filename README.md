@@ -11,10 +11,14 @@ This project requires Python 3 package.<BR>
 First, install pipenv. Then:
 
 ```
+git clone https://github.com/wanglianglin/webapp_awabiage.git
+cd webapp_awabiage
 pipenv install
 cd abaloneage
 pipenv run python abaloneage.py
 ```
+
+Open http://localhost:8080/ from browser
 
 ## Note
 + Refer *{Pipfile}* to find out required python packages.
