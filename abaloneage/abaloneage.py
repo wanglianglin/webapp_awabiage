@@ -89,4 +89,11 @@ def result():
 
 # Reload the page on file update
 run(host='localhost', port=8080, reloader=True)
+
+#------------------------------------------------------------------------------------
+# Start web application by using uWSGI
+# Known Issue: The path to virtual environment is wrong.
+# Because of that, ModuleNotFoundError: No module named 'bottle', will happen.
+# Wall Around: pipenv run uwsgi uwsgi.ini -H ~/.virtualenvs/webapp_awabiage-bc94KpLF
+#------------------------------------------------------------------------------------
 #application = default_app()
